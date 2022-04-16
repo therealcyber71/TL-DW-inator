@@ -44,6 +44,11 @@ Step 3. You're good to go!!
 Click on the image (can't believe I'm saying this) \
 [![Watch the video](https://raw.githubusercontent.com/therealcyber71/TL-DW-inator/main/download%20(1).png)](https://youtu.be/pA92zUpsCmM)
 
+## Drawbacks
+Here are a few drawbacks related to the project:
+1. Binaries aren't available (due to the time limit for the hackathon, it is on the roadmap though) \
+2. Grammar, the summary doesnt have the best grammar, because of the teeny mistake of the Text extracting API.
+
 
 ## ❤️ Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
