@@ -26,7 +26,7 @@ Now simply wait for a few minutes as the program understands the audio in the fi
 
 ## ⚙️Installation and Usage
 ### >Steps for installation and usage:
-1. Install the Source Code from the [Official GitHub page]()
+1. Install the Source Code from the [Official GitHub page](https://github.com/therealcyber71/TL-DW-inator)
 2. Enter the API keys in the `db.txt` file from the [deepgram](https://deepgram.com/) website.
 3. The GUI will now appear, enter the YouTube link .
 4. Wait for sometime (a few seconds approximately) and your video transcript plus video summary will be ready.
