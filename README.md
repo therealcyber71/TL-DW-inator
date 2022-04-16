@@ -35,8 +35,8 @@ Now simply wait for a few minutes as the program understands the audio in the fi
 1. [Deepgram](https://console.deepgram.com/signup)
 
 ### >What to do with the API key
-Step 1. Make a `.txt` file called `db.txt` in the same location as the App (binary or script file).
-Step 2. Enter the key in the first line in the text file and close it.
+Step 1. Make a `.txt` file called `db.txt` in the same location as the App (binary or script file). \
+Step 2. Enter the key in the first line in the text file and close it. \
 Step 3. You're good to go!!
 
 ### >Installation video
