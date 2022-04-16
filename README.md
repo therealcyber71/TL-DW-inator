@@ -42,7 +42,7 @@ Step 3. You're good to go!!
 ### >Installation video
 [YouTube video](https://youtu.be/pA92zUpsCmM) \
 Click on the image (can't believe I'm saying this) \
-[![Watch the video](https://raw.githubusercontent.com/therealcyber71/Sonoma-Hackathon-2.0/main/download%20(1).png?token=GHSAT0AAAAAABTUGXKRE5YAVS2HB6QXSX56YS3J3ZA)](https://youtu.be/pA92zUpsCmM)
+[![Watch the video](https://raw.githubusercontent.com/therealcyber71/TL-DW-inator/main/download%20(1).png)](https://youtu.be/pA92zUpsCmM)
 
 
 ## ❤️ Contributing
