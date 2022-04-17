@@ -1,23 +1,22 @@
-import PySimpleGUI as sg #Our Primary GUI 
-from deepgram import Deepgram
-import asyncio, json
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
-from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
-from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
-from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
-import pyautogui as pg
-
+import PySimpleGUI as sg #Our Primary GUI builder
+from deepgram import Deepgram #API that helps extract audio transcript
+import asyncio, json #To deal with asynchronous processes
+from nltk.corpus import stopwords #Natural Language Processing Packages
+from nltk.tokenize import word_tokenize, sent_tokenize #Natural Language Processing Packages
+from pysummarization.nlpbase.auto_abstractor import AutoAbstractor #Natural Language Processing Packages
+from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer #Natural Language Processing Packages
+from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor #Natural Language Processing Packages
+import pyautogui as pg #Secondary GUI builder
 with open('db.txt') as f:
     lines = f.readlines()
     #print(lines)
     zay = (lines[0])
     zay = str(zay)
 DEEPGRAM_API_KEY = zay 
-import os
-from yt_dlp import YoutubeDL
-import base64
-while True:# Gui Loop
+import os #To manage local files and API keys
+from yt_dlp import YoutubeDL #To download YouTube links
+
+while True: #While loop to keep the GUI running
     sg.theme('dark grey 10')
     layout = [[sg.Text("Enter YouTube video link here:")],
             [sg.Input(key='-INPUT-')],
@@ -34,22 +33,22 @@ while True:# Gui Loop
     linkz = values['-INPUT-']
     ydl_opts = {'format': 'bestaudio'}
     with YoutubeDL(ydl_opts) as ydl:
-        ydl.download([linkz])
+        ydl.download([linkz])# Youtube video downloading 
 
             
-    abc = "demo" #Renames the files
+    abc = "demo"
 
     x = os.listdir()
     for i in x:
         if i.endswith('.webm'):
             global xz
             xz = abc + '.mp4'
-            os.rename(i,xz)
+            os.rename(i,xz) #Renaming downloaded file
             print(xz)
     PATH_TO_FILE = xz
     MIMETYPE = 'audio/wav'
 
-    async def main():
+    async def main():#Async function to handle DeepGram API
 
         dg_client = Deepgram(DEEPGRAM_API_KEY)
         
@@ -68,7 +67,7 @@ while True:# Gui Loop
             
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(main())   
-    def transcript():#summarizes the transcript
+    def transcript(): #using NLTK to understand text summarization, more details in the PPT
         text = xas
         stopWords = set(stopwords.words("english"))
         words = word_tokenize(text)
@@ -106,7 +105,7 @@ while True:# Gui Loop
                 summary += " " + sentence
 
     transcript()
-    def transr(): #second summary
+    def transr(): #summarizing already summarized text to extract shorter version of the summary.
         document = summary
         auto_abstractor = AutoAbstractor()
 
@@ -126,5 +125,5 @@ while True:# Gui Loop
         
         pg.alert(text=listToStr, title='Video Summary [TL;DW-inator]')
     transr()
-    os.remove(xz)
+    os.remove(xz) #Deleting the file after the process ended.
     window.close()
