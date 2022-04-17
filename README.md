@@ -47,7 +47,7 @@ Click on the image (can't believe I'm saying this) \
 ## Drawbacks
 Here are a few drawbacks related to the project:
 1. Binaries aren't available (due to the time limit for the hackathon, it is on the roadmap though) 
-2. Grammar, the summary doesnt have the best grammar, because of the teeny mistake of the Text extracting API.
+2. Grammar, the summary doesnt have the best grammar, because of innacurate text extraction.
 
 
 ## ❤️ Contributing
