@@ -40,9 +40,9 @@ Step 2. Enter the key in the first line in the text file and close it. \
 Step 3. You're good to go!!
 
 ### >Installation video
-[YouTube video](https://youtu.be/pA92zUpsCmM) \
-Click on the image (can't believe I'm saying this) \
-[![Watch the video](https://raw.githubusercontent.com/therealcyber71/TL-DW-inator/main/download%20(1).png)](https://youtu.be/pA92zUpsCmM)
+[YouTube video on how to work with the app](https://youtu.be/pA92zUpsCmM) \
+[YouTube video on how to set API keys](https://youtu.be/tWwGi7m6KwU)
+
 
 ## Drawbacks
 Here are a few drawbacks related to the project:
